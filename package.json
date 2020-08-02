@@ -1,13 +1,24 @@
 {
   "name": "react-countries-graphql",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.0.1",
+  "private": false,
+  "author": "Richard Matheus Vilas Boas",
   "dependencies": {
+    "@apollo/client": "^3.1.1",
+    "@apollo/react-hooks": "^4.0.0",
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
     "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
+    "@testing-library/react": "^10.4.7",
     "@testing-library/user-event": "^7.1.2",
+    "final-form": "^4.20.1",
+    "final-form-material-ui": "^0.3.0",
+    "graphql": "^15.3.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-final-form": "^6.5.1",
+    "react-map-gl": "^5.2.7",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1"
   },
   "scripts": {

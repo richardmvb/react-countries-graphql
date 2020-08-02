@@ -1,26 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from 'react'
+import Routes from './routes'
+import { makeStyles } from '@material-ui/core'
+import Header from './components/Header'
+import Footer from './components/Footer'
 
-function App() {
+const useStyles = makeStyles(theme => ({
+  container: {
+      offset: theme.mixins.toolbar,
+      paddingTop: theme.spacing(2),
+      paddingBottom: theme.spacing(2),
+  }
+}))
+
+const App = () => {
+  const classes = useStyles()
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Fragment>
+      <Header title="React Countries App with GraphQL" />
+      <main>
+        <div className={classes.container}>
+            <Routes />
+        </div>
+      </main>
+      <Footer author="Richard Matheus Vilas Boas" />
+    </Fragment>
+  )
 }
 
-export default App;
+export default App
