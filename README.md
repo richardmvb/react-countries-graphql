@@ -4,7 +4,8 @@ Link for [DEMO](http://react-countries-app.s3-website.us-east-2.amazonaws.com/)
 
 ## Features
 
-- Using  [API Graph Countries] (https://github.com/lennertVanSever/graphcountries)
+- Using  [API Graph Countries](https://github.com/lennertVanSever/graphcountries)
+- Using [Material UI](https://material-ui.com)
 - List all countries
 - Search for a country
 - Detailed country page
